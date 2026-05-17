@@ -27,7 +27,35 @@ For WOTLK, open UnicodeFont.toc and change the following: Interface: 11200 to In
 ### Setup
  1. Press the green code button and click download zip
  2. Rename UnicodeFont-master to UnicodeFont and drag it into your addon folder
- 3. Start up WoW and view some non latin characters, it should now display correctly in chat and in chat bubbles.
+ 3. Start up WoW and view some non latin characters, it should now display correctly in chat.
+
+### Commands
+
+UnicodeFont enables chat font replacement by default. Other UI areas are opt-in and saved account-wide.
+
+```
+/unicodefont list
+/unicodefont enable chat
+/unicodefont disable chat
+/unicodefont enable quest
+/unicodefont disable quest
+/unicodefont enable unitframes
+/unicodefont disable unitframes
+/unicodefont enable overhead
+/unicodefont disable overhead
+/unicodefont enable nameplates
+/unicodefont disable nameplates
+```
+
+Options:
+
+- `chat` - chat text, enabled by default
+- `quest` - quest log and quest detail text
+- `unitframes` - player, target, target-of-target, pet, and party frame text
+- `overhead` - world unit names such as player/NPC names and guild names
+- `nameplates` - default nameplate font
+
+Some changes may require `/reload` or a client restart to fully revert fonts already applied in the current session.
 
 ![Image](https://i.imgur.com/dsADiDx.png)
 ![Image](https://i.imgur.com/53cNNmb.png)
